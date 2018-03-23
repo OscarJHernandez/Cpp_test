@@ -7,10 +7,10 @@
 Note: for the ubuntu 16.04, the gsl headers were placed in src, therefore, that is where 
 I have specified to the c++ program to look.
 
-/ To create an object file
+* To create an object file  
 $ g++ -Wall -I/usr/src -c integration_with_gsl.cpp 
 
-/ To create the executable
+* To create the executable  
 $ g++ -L/usr/src integration_with_gsl.o -o outputName -lgsl -lgslcblas -lm
 
 
@@ -61,6 +61,10 @@ int main(){
 	}
 //=================================================================================
 ```   
+
+$ g++ -c function1.c
+$ g++ -c main.cpp
+$ g++ function.o main.o -o main
 
 
 ## How to use .h files for classes:

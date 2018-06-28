@@ -9,3 +9,4 @@ int add(int i, int j);
 double square(double x);
 void twice(py::array_t<double> xs);
 double sum(py::array xs);
+double sf_bessel(double x);

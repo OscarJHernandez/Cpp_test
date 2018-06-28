@@ -1,5 +1,6 @@
 #include <pybind11/numpy.h>
 #include <pybind11/pybind11.h>
+#include <gsl/gsl_sf_bessel.h>
 
 namespace py = pybind11;
 using namespace pybind11::literals;
@@ -58,4 +59,16 @@ double sum(py::array xs) {
 
     return s;
 }
+
+
+double sf_bessel(double x){ 
+	//double x = 5.0;
+    gsl_sf_result result;
+
+    double expected = -0.17759677131433830434739701;
+  
+    int status = gsl_sf_bessel_J0_e (x, &result);
+	  
+	return result.val;
+	}
 

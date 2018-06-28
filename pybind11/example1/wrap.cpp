@@ -24,6 +24,7 @@ PYBIND11_PLUGIN(wrap) {
     // A function that takes generic numpy array as input
     m.def("twice", &twice);
     
-    
+    // A function that takes generic numpy array as input
+    m.def("sf_bessel", &sf_bessel);
     return m.ptr();
 }

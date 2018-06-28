@@ -25,5 +25,8 @@ if __name__ == '__main__':
 	wrap.twice(xs)
 	print("twice:", xs)
 	
+	# Test GSL inclusion
+	print('Exact answer: x=5 ', -0.17759677131433830434739701 , ' given: ', wrap.sf_bessel(5.0))
+	
     
     

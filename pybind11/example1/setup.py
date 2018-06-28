@@ -11,6 +11,7 @@ ext_modules = [
         ['funcs.cpp', 'wrap.cpp'],
         include_dirs=['pybind11/include'],
     language='c++',
+    libraries=['gsl', 'gslcblas'],
     #extra_compile_args = cpp_args,
     ),
 ]

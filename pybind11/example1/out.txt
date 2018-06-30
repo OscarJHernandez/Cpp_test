@@ -1,0 +1,3 @@
+running build_ext
+building 'wrap' extension
+gcc -pthread -B /home/sovereign/anaconda/envs/py35/compiler_compat -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -Ipybind11/include -I/home/sovereign/anaconda/envs/py35/include/python3.5m -c funcs.cpp -o build/temp.linux-x86_64-3.5/funcs.o
